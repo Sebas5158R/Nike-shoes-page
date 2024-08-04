@@ -1,0 +1,12 @@
+---
+interface Props {
+  size: number;
+}
+
+const { size } = Astro.props;
+---
+
+<span
+  class="inline-flex items-center w-9 h-9 justify-center bg-transparent px-2 py-1 text-sm font-medium text-white ring-1 ring-inset ring-white m-1 hover:bg-gray-500 cursor-pointer"
+  >{size}</span
+>
