@@ -4,6 +4,7 @@ import Layout from '../layouts/Layout.astro';
 import NikeData from '../components/NikeData.astro';
 import SelectOptions from '../components/SelectOptions.astro';
 import DescriptionAndArrows from '../components/DescriptionAndArrows.astro';
+import PlayLogo from '../assets/svgs/PlayLogo.astro';
 ---
 
 <Layout title="Nike Page.">
@@ -12,5 +13,11 @@ import DescriptionAndArrows from '../components/DescriptionAndArrows.astro';
 		<NikeData />
 		<SelectOptions />
 		<DescriptionAndArrows />
+		<div class="flex justify-center">
+			<p class="text-center text-white bottom-0 absolute flex items-center gap-2 cursor-pointer -mb-3">
+				<PlayLogo /> 
+				PLAY VIDEO
+			</p>
+		</div>
 	</div>
 </Layout>
