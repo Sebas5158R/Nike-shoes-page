@@ -1,4 +1,5 @@
 ---
+import Navbar from '../components/Navbar.astro';
 interface Props {
 	title: string;
 }
@@ -17,7 +18,14 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<slot />
+		<div id="app" class="relative h-screen p-2 gap-2">
+			<header class="[grid-area:header] flex-col flex overflow-y-auto">
+				<Navbar />
+			</header>
+			<main class="[grid-area:main] rounded-lg  overflow-y-auto w-full">
+				<slot />
+			</main>
+		</div>
 	</body>
 </html>
 <style is:global>
@@ -28,7 +36,7 @@ const { title } = Astro.props;
 	/* Custom global styles */
 	body {
 		font-family: 'Inter', sans-serif;
-		background-color: #002B8F;
+		background-color: #0141D9;
 	}
 
 	@font-face {
@@ -36,5 +44,22 @@ const { title } = Astro.props;
 		src: url('../assets/fonts/TradeGothicLTCondensed.ttf') format('truetype');
 		font-weight: 400;
 		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'ThunderBold';
+		src: url('../assets/fonts/Thunder-ExtraBoldLC.otf') format('opentype');
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	#app {
+		display: grid;
+		grid-template-areas: 
+			"header header"
+			"main main";
+		grid-template-columns: 1fr;
+		grid-template-rows: auto 1fr;
+		height: 100vh;
 	}
 </style>

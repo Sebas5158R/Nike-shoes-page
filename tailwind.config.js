@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         TradeGothic: ['Trade Gothic', 'sans-serif'],
+        ThunderBold: ['ThunderBold', 'sans-serif'],
       }
     },
   },
