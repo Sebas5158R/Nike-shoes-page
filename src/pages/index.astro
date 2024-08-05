@@ -21,3 +21,38 @@ import PlayLogo from '../assets/svgs/PlayLogo.astro';
 		</div>
 	</div>
 </Layout>
+
+
+<script>
+	const btnRed = document.querySelector('.btn-red');
+	const btnBlue = document.querySelector('.btn-blue');
+	const btnCyan = document.querySelector('.btn-cyan');
+	const nikeImg = document.getElementById('nike-img');
+
+	btnRed?.addEventListener('click', () => {
+		btnBlue?.classList.remove('border-2');
+		btnCyan?.classList.remove('border-2');
+		document.body.style.backgroundColor = '#AD010D';
+		document.body.style.transition = 'background-color 0.5s';
+		btnRed.classList.add('border-2');
+		nikeImg?.setAttribute('src', '/nike-red.png');
+	})
+
+	btnBlue?.addEventListener('click', () => {
+		btnRed?.classList.remove('border-2');
+		btnCyan?.classList.remove('border-2');
+		document.body.style.backgroundColor = '#0141D9';
+		document.body.style.transition = 'background-color 0.5s';
+		btnBlue.classList.add('border-2');
+		nikeImg?.setAttribute('src', '/nike-blue.png');
+	})
+
+	btnCyan?.addEventListener('click', () => {
+		btnRed?.classList.remove('border-2');
+		btnBlue?.classList.remove('border-2');
+		document.body.style.backgroundColor = '#3C919C';
+		document.body.style.transition = 'background-color 0.5s';
+		btnCyan.classList.add('border-2');
+		nikeImg?.setAttribute('src', '/nike-cyan.png');
+	})
+</script>
