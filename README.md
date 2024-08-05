@@ -7,7 +7,14 @@ git clone https://github.com/Sebas5158R/Nike-shoes-page.git
 
 > 🏠 **Screenshot page**!
 
-![Nike-page](https://github.com/user-attachments/assets/d9b0477a-2732-4b22-ad41-0e55c752870a)
+> Nike - Blue
+![image](https://github.com/user-attachments/assets/983ecea6-22fd-4fb4-8cc7-7cb9fd4d1091)
+
+> Nike - Red
+![image](https://github.com/user-attachments/assets/e3f1afc5-9e60-4250-9576-c2362753c1b6)
+
+> Nike - Cyan
+![image](https://github.com/user-attachments/assets/060c4960-29ff-44da-bc8a-7fe1b9580d58)
 
 
 ## 🚀 Project Structure
